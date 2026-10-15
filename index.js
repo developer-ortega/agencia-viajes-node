@@ -12,6 +12,9 @@ const port = process.env.PORT || 4000;
 // Habilitar PUG
 app.set('view engine', 'pug');
 
+// Definir la carpeta publica
+app.use(express.static('public'));
+
 app.listen(port, () => {
     console.log(`El servidor está corriendo en el puerto ${port}`);
 })
