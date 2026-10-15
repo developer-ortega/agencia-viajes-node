@@ -8,8 +8,6 @@ router.get('/', (req, res) => { // req - lo que enviamos : res - lo que express 
 })
 router.get('/nosotros', (req, res) => {
     res.render('nosotros'); 
-    /*const viajes = 'Viaje a Alemania';
-    res.render('nosotros', { viajes }); // renderiza la vista de PUG*/
 })
 
 export default router;
