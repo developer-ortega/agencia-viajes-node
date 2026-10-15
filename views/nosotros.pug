@@ -1,6 +1,34 @@
 extends ./layout/index
 
 block content
-    p= viajes
+    main.container.mt-5 
+        .row 
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="Sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque turpis, interdum sed vulputate ac, vehicula nec libero. Etiam sit amet sapien ut quam lacinia maximus. Donec non mi nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi vitae congue neque, id iaculis purus. Sed varius blandit ornare. Aliquam in lorem a orci luctus lacinia nec in nisi. Nullam vulputate justo felis, et bibendum ex blandit ac.
 
-    img(src="img/cupon.jpg") 
+                p Phasellus tortor eros, consequat vitae interdum vel, venenatis eget tellus. Sed dignissim et ante in mattis. Curabitur at convallis libero. Suspendisse porta ante in sagittis maximus. Aenean a vestibulum mauris, vel ultricies justo. Mauris est tortor, aliquam ac diam fermentum, mattis blandit urna. Proin pulvinar rutrum iaculis. Suspendisse consequat tortor ullamcorper sem ullamcorper lacinia. Donec interdum nunc in elementum venenatis. Nulla tincidunt non purus non molestie. Morbi eleifend neque nulla, nec porttitor odio aliquam vitae. Pellentesque commodo lorem nisi, a venenatis sem scelerisque nec.
+
+                p Pellentesque ac aliquam dolor. Duis tincidunt libero et mollis convallis. Suspendisse porta, leo et mollis ullamcorper, quam nunc malesuada massa, sed accumsan dui tortor vitae dolor. Etiam fermentum, ex sit amet tempor sollicitudin, lacus massa dapibus erat, eu consequat ipsum velit et metus. Phasellus non mauris ac lectus finibus scelerisque pretium a nisi. In hac habitasse platea dictumst. Nullam at felis eget ligula dictum imperdiet placerat in est.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Pellentesque ac aliquam dolor. Duis tincidunt libero et mollis convallis.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Destinos
+                    p Pellentesque ac aliquam dolor. Duis tincidunt libero et mollis convallis.
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Precios
+                    p Pellentesque ac aliquam dolor. Duis tincidunt libero et mollis convallis.
+
+                    
+
+
