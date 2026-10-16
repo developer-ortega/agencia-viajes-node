@@ -1,10 +1,7 @@
 import Sequelize from 'sequelize';
 import 'dotenv/config';
 
-const db = new Sequelize(process.env.DB_NOMBRE, process.env.DB_USER, process.env.DB_PASS, {
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-    dialect: 'mysql',
+const db = new Sequelize(process.env.DATABASE_URL, {
     define: {
         timestamps: false
     },
